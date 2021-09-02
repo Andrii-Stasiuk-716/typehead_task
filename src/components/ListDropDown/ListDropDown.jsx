@@ -1,9 +1,9 @@
 import React from 'react';
 import './ListDropDown.css';
 
-export const ListDropDown = ({ results, hide }) => {
+export const ListDropDown = ({ results, className }) => {
   return (
-    <div className={`list ${hide ? 'hide' : ''}`}>
+    <div className={`list ${className}`}>
       {results.map((result) => (
         <a key={result.id} href={result.html_url} className='list__item' target='_blank'>
           <div className='avatar-wrapper'>

@@ -51,7 +51,7 @@ function TypeAheadDropDown() {
 
       {isSearching && <div>Searching ...</div>}
 
-      {!isSearching && <ListDropDown results={results} hide={hide} />}
+      {!isSearching && <ListDropDown results={results} className={hide ? 'hide' : ''} />}
     </div>
   );
 }
